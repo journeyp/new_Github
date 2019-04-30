@@ -16,7 +16,6 @@
 		
 		<script>
 			$(document).ready(function(){
-				//alert("fuck u");
 				$('.slider_parents').slick({
 					
   					centerMode:true,
