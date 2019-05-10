@@ -6,6 +6,7 @@
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
+		<!--slick-->
 		<script type="text/javascript" src="/slick-1.8.1-m/slick/slick.js"></script>
 		<link rel="stylesheet" type="text/css" href="/slick-1.8.1-m/slick/slick.css">
 		<link rel="stylesheet" type="text/css" href="/slick-1.8.1-m/slick/slick-theme.css">
@@ -28,11 +29,9 @@
     				cssEase: 'linear',
     				variableWidth: true,
     				variableHeight: true,
-
   				});
 			});
 
-			
 			$(window).scroll(function(){
 				if($(window).scrollTop() > 785){
 					$('.menu2').slideDown('0');
@@ -42,8 +41,6 @@
 				}
 			});
 
-			
-
 			$(document).ready(function(){
 				$('.catalog_gnb li p').click(function(){
 					$('.catalog_gnb li p').removeClass("active");
@@ -51,18 +48,14 @@
 				});
 
 				$('.catalog_gnb01').click(function(){
-					/*alert("nonono");*/
 					$('.image').animate({left: '360px'});
 				});
 				$('.catalog_gnb02').click(function(){
-					/*alert("fuck");*/
 					$('.image').animate({left: '486px'});
 				});
 				$('.catalog_gnb03').click(function(){
-					/*alert("fuck");*/
 					$('.image').animate({left: '675px'});
 				});
-
 			});
 
 			$(document).ready(function(){
@@ -85,26 +78,20 @@
 					return false;
 				});
 			});
-
 		</script>
-
-		<style>
-			*{
-				padding: 0; 
-				margin: 0; 
-				list-style: none; 
-				text-decoration: none;
-			}
-		</style>
-
 	</head>
 	<body>
 		<div class="wrap">
-
 			<style>
 
-				/*top_menu*/
+				*{
+					padding: 0; 
+					margin: 0; 
+					list-style: none; 
+					text-decoration: none;
+				}
 
+				/*top_menu*/
 				.top{
 					height: 50px; 
 					background-color: #084e96;
@@ -176,24 +163,12 @@
 					padding-bottom: 15px;
 				}
 
-				/*hover하면 mini_menu 뜨는 css*/
 				.top_menu > li:last-child:hover .mini_menu{
 					display: block;		
 					position: absolute; 
 					z-index: 100;
 				}
 
-				/*
-				.top_menu > li:hover .mini_menu{
-					display: block;
-				}
-
-				.top_menu > li:nth-child(5):hover .cart{
-					display: block;
-				}
-				*/
-
-				/*top_menu에 overflow:hidden이 있으면 이건 적용되지 않으므로 제거해야한다.*/
 				.mini_menu{
 					border: 1px solid grey; 
 
@@ -211,14 +186,17 @@
 					padding-top: 10px;
 				}
 
-				.mini_menu > img{border: 0px solid blue; position: absolute; top: -18px; left: 120px; }
+				.mini_menu > img{
+					border: 0px solid blue; 
+					position: absolute; 
+					top: -18px; 
+					left: 120px;
+				}
 
 				.mini_menu > li{
 					border: 0px solid blue; 
 					padding: 8px 0; 
 				}
-
-				
 
 				.mini_menu > li > a > p{
 					text-align: center; 
@@ -231,31 +209,6 @@
 					text-decoration: underline;
 				}
 
-				.
-
-				/*
-				.cart{
-					border: 1px solid grey; 
-					width: 200px;
-					height: 150px;
-					background-color: #fff; 
-					background-image:url("./images/62.jpg");
-
-					position: absolute;
-					display: none;
-					right: -78px;
-					top: 34px;
-
-				}
-
-				.cart > button{
-					width: 180px;
-					height: 40px; 
-					background-color: #084e96;
-					border-radius: 20px;
-				}
-				*/
-
 				.logo{
 					border: 0px solid green;
 					height: 112px;
@@ -265,51 +218,9 @@
 					border: 0px solid blue;
 					text-align: center; 
 					margin: 50px 0;
-				
 				}
 
-
-
-			</style>
-
-
-			<div class="top">
-				<h1 class="mini_logo">
-					<img src="./images/logo_mini.png">
-				</h1>
-				<ul class="top_menu">
-					<li><a href="#"><p>JOIN</p></a></li>
-					<li><a href="#"><p>LOGIN</p></a></li>
-					<li><a href="#"><p>MY PAGE</p></a></li>
-					<li><a href="#"><p>FAVORITE</p></a></li>
-					<li><a href="#"><p>CART</p></a>
-						<!--
-						<div class="cart">
-							<img src="./images/img_cart.png">
-							<button>view cart</button>
-						</div>
-						-->
-					</li>
-					<li>
-						<img src="./images/btn_menu.png">
-						<ul class="mini_menu" >
-							<img src="./images/arrow_subnav.png">
-							<li><a href="#"><p>자주 묻는 질문</p></a></li>
-							<li><a href="#"><p>메일 수신 요청</p></a></li>
-							<li><a href="#"><p>문의하기</p></a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-
-
-			<div class="logo">
-				<h1><img src="./images/logo.png"></h1>
-			</div>
-
-
-			<style>
-				/*slider*/
+/*slider*/
 				.slider{
 					border: 0px solid red; 
 					width: 100%;
@@ -342,9 +253,7 @@
 					opacity: 0.7;
 				}
 
-
-				/*버튼*/
-
+				/*button*/
 				.slick-dots li button{
 					border: 0px solid red;
 				}
@@ -367,69 +276,53 @@
 					opacity: 1;
 				}
 
-				/*
-
-				.slick-prev, .slick-next{
-					width: 36px; 
-					height: 58px; 
-					background-color: #084e96; 
-					position: absolute;
-					z-index: 100; 
+				/*menu*/
+				.menu{
+					height: 65px; 
+					border-top: 1px solid #084e96; 
+					border-bottom: 1px solid #084e96; 
+					margin-top: 80px; 
 				}
-				
-				*/
-
-				/*
-
-				.slick-prev:hover, .slick-next:hover{
-					background-color: #053a70;
+				.sub_menu{
+					width: 950px; 
+					margin: 0 auto; 
 				}
-				
-				.slick-prev{
-					border: 3px solid red; 
-					top: 220px; 
-					left: 524px;
-					background-image: url("./images/arrow_prev01.png");
-					background-repeat: no-repeat;
-					background-position: 13px 23px; 
-
-
+				.gnb > li{
+					float: left; 
+				}
+				.gnb > li{
+					background-image: url("./images/border01.png"); 
+					background-repeat: no-repeat; 
+					background-position: left center;
+				}
+				.gnb > li > a > p{
+					font-size: 15px; 
+					font-weight: bold; 
+					letter-spacing: 1px; 
+					margin: 0 32px; 
+					padding: 23px 0; 
+					color: #084e96;
+				}
+				.sns_set{
+					width: 204px; 
+					overflow: hidden;
+				}
+				.sns_set{
+					background-image: url("./images/border01.png"); 
+					background-repeat: no-repeat; 
+					background-position: left center;
+				}
+				.sns_set > li{
+					float: left; 
+				}
+				.sns_set > li > a > p{
+					padding: 23px 0px; 
+					padding-left: 44px; 
+				}
+				.sns_set > li:hover{
+					opacity: 0.8;
 				}
 
-				.slick-next{
-					top: 220px;
-					left: 1360px;
-					background-image: url("./images/arrow_next01.png");
-					background-repeat: no-repeat;
-					background-position: 13px 23px; 
-				}
-
-				.slick-prev:before{
-    				content: '';
-				}
-
-				.slick-next:before{
-					content: '';
-				}
-
-
-				*/
-
-				/*menu!!*/
-				.menu{border: 0px solid red; height: 65px; border-top: 1px solid #084e96; border-bottom: 1px solid #084e96; margin-top: 80px; }
-				.sub_menu{border: 0px solid red; width: 950px; margin: 0 auto; }
-				.gnb{}
-				.gnb > li{float: left; }
-				.gnb > li{background-image: url("./images/border01.png"); background-repeat: no-repeat; background-position: left center;}
-				.gnb > li > a{border: 0px solid red; }
-				.gnb > li{border: 0px solid green; }
-				.gnb > li > a > p{border: 0px solid blue; font-size: 15px; font-weight: bold; letter-spacing: 1px; margin: 0 32px; padding: 23px 0; color: #084e96;}
-
-				.sns_set{border: 0px solid red; width: 204px; overflow: hidden;}
-				.sns_set{background-image: url("./images/border01.png"); background-repeat: no-repeat; background-position: left center;}
-				.sns_set > li{float: left; }
-				.sns_set > li > a > p{border: 0px solid blue; padding: 23px 0px; padding-left: 44px; }
-				.sns_set > li:hover{opacity: 0.8;}
 				/*under line*/
 				#underline{
 					position: relative;
@@ -450,14 +343,6 @@
 					opacity: 1; 
 				}
 
-
-
-
-
-
-
-
-
 				/*두번째 메뉴*/
 				.menu2{
 					background-color: #f0f0f0;
@@ -471,7 +356,6 @@
 					opacity: 0.9;
 				}
 				.sub_menu2{
-					border: 0px solid red; 
 					width: 1100px;
 					margin: 0 auto;
 					position: relative;
@@ -479,18 +363,15 @@
 				.sub_menu2 > h1{
 					position: absolute; 
 					top: 12px;
-					border: 0px solid red; 
 					width: 115px;
 				}
 				.sub_menu2 > h1 > img{
-					border: 0px solid blue;
 					width: 115px;
 				}
 				.sub_menu2 > h1:hover{
 					opacity: 0.8;
 				}
 				.gnb2 {
-					border: 0px solid orange;
 					width: 722px;
 					margin-left: 170px;
 				}
@@ -508,7 +389,6 @@
 					padding: 23px 0;
 					color: #084e96;
 				}
-
 				.sns_set2{
 					width: 204px;
 					overflow: hidden;
@@ -547,15 +427,7 @@
 				}
 
 
-
-
-
-
-
-
-
 				.contents{
-					border: 0px solid green; 
 					width: 100%;
 					height: 460px;
 					margin: 0 auto;
@@ -569,13 +441,11 @@
 					font-weight: bold;
 				}
 				.little_contents{
-					border: 0px solid red; 
 					width: 1084px;
 					margin: 0 auto;
 					margin-top: 60px;
 				}
 				.little_contents > ul > li{
-					border: 0px solid blue;
 					float: left;
 					position: relative;
 					margin-right: 17px;
@@ -584,7 +454,6 @@
 					margin-right: 0;
 				}
 				.text-box{
-					border: 0px solid orange;
 					width: 315px;
 					height: 110px;
 					position: absolute;
@@ -596,7 +465,6 @@
 					text-align: center;
 					font-weight: bold; 
 					color: #084e96;
-					border: 0px solid red; 
 					padding-top: 25px;
 					padding-bottom: 10px;
 					font-size: 14px;
@@ -606,9 +474,7 @@
 					color: #084e96;
 					font-size: 13px;
 				}
-
 				.catalog{
-					border: 0px solid red;
 					width: 1100px;
 					margin: 0 auto;
 				}
@@ -617,14 +483,11 @@
 					height: 60px;
 					background-color: #084e96;
 				}
-
 				.catalog_gnb{
-					border: 0px solid blue;
 					padding-top: 13px;
 					width: 409px;
 					margin: 0 auto;
 				}
-
 				.catalog_gnb > li{
 					float: left; 
 					padding-left: 35px;
@@ -911,7 +774,349 @@
 					bottom: -4px;
 				}
 
+				.image_up{
+						border: 0px solid green;
+						margin-top: 150px;
+					}
+					.image_up > h1{
+						text-align: center;
+						color: #084e96;
+					}
+					.list{
+						border: 0px solid red;
+						margin-top: 55px;
+					}
+					.list > li{
+						border: 3px solid #084e96;
+						width: 109px; 
+						height: 100px;
+						margin-right: 8px;
+						float: left;
+					}
+					.list > li:last-child{
+						margin-right: 0;
+					}
+					.list > li > img{
+						width: 93px;
+						margin-top: -26px; 
+						margin-left: 9px;
+					}
+					.list > li > p{
+						font-size: 12px; 
+						font-weight: bold;
+						color: #084e96;
+						text-align: center;
+					}
 
+					.list > li:hover img{
+						transform: translate(0, -10px);
+					}
+
+					.character{
+						border: 0px solid green;
+						position: relative; 
+						height: 1350px;
+						margin-top: 300px;
+						background-color: #f0f0f0;
+					}
+
+					.character_main{
+						width: 1030px;
+						margin: 0 auto;
+					}
+
+					.character_main > h1{
+						color: #084e96;
+						text-align: center;
+						font-size: 26px;
+						padding-top: 60px;
+						padding-bottom: 60px;
+					}
+
+					.character_animation{
+						background-image: url("./images/character/bg_tab_suzyzoo.png");
+						position: relative;
+						width: 1030px;
+						height: 370px;
+						border: 0px solid red; 
+						overflow: hidden;
+					}
+
+					.suzy{
+						border: 0px solid red; 
+						position: absolute; 
+						top: 30px;
+						left: 366px;
+					}
+					.suzy02{
+						border: 0px solid blue;
+						position: absolute;
+						top: 166px;
+						right: 125px;
+					}
+					.suzy_heart01{
+						position: absolute; 
+						top: 180px;
+						right: 42px;
+					}
+
+					.suzy03{
+						border: 0px solid green;
+						position: absolute;
+						top: 19px;
+						left: 120px;
+					}
+
+					.suzy_heart02{
+						position: absolute;
+						top: 125px;
+						left: 40px;
+					}
+
+					.suzy04{
+						border: 0px solid green;
+						position: absolute;
+						top: 104px;
+						right: 280px;
+					}
+					.suzy05{
+						border: 0px solid green;
+						position: absolute;
+						top: 122px;
+						left: 245px;
+					}
+					.suzy_logo{
+						position: absolute; 
+						top: 22px;
+						right: 20px;
+					}
+					.character_introduce{
+						margin-top: 90px;
+					}
+
+					.introduce{
+						border: 0px solid blue;
+						width: 1100px;
+						margin: 0 auto; 
+					}
+					.introduce > li{
+						float: left; 
+						width: 350px;
+						height: 114px;
+						position: relative; 
+						margin-right: 24px;
+					}
+					.introduce > li:last-child{
+						margin-right: 0;
+					}
+
+					.introduce > li:hover img{
+						opacity: 0.8;
+					}
+					.introduce > li:hover .char_title{
+						text-decoration: underline;
+					}
+					.introduce > li > a > img{
+						border: 3px solid #dcdcdc;
+					}
+					.char_topics{
+						border: 0px solid green;
+						position: absolute; 
+						top: 5px;
+						left: 128px;
+						font-size: 15px;
+						font-weight: bold;
+						color: #084e96;
+					}
+					.char_title{
+						border: 0px solid yellow;
+						position: absolute; 
+						top: 32px;
+						left: 128px;
+						font-size: 14px;
+						color: #084e96;
+					}
+					.char_date{
+						border: 0px solid orange;
+						position: absolute; 
+						bottom: 5px;
+						left: 128px;
+						font-size: 13px;
+						color: #848484;
+					}
+
+
+					/*footer*/
+					.footer{
+						width: 100%;
+						height: 392px;
+						margin-top: 50px;
+						position: absolute; 
+						bottom: 0;
+					}
+					.footer_blue{
+						background-color: #044181;
+						width: 100%;
+						height: 322px;
+						position: absolute;
+						bottom: 0;
+					}
+
+
+
+					.footer_green{
+						position: relative;
+						border: 0px solid green;
+						width: 1100px;
+						height: 100%;
+						margin: 0 auto;
+					}
+					.footer_brand{
+						border: 0px solid red;
+						width: 420px;
+						height: 392px;
+						position: absolute; 
+						bottom: 0;
+						background-color: #084e96;
+					}
+
+					.footer_brand > h1{
+						margin-left: 40px;
+						margin-top: 40px;
+						margin-bottom: 35px;
+					}
+
+					.footer_brand_cat{
+						border: 0px solid red;
+						width: 340px;
+						height: 200px;
+						margin: 0 auto;
+						border-bottom: 1px solid #fff;
+					}
+					.footer_brand_cat > li{
+						float: left;
+						margin-bottom: 30px;
+					}
+					.footer_brand_cat > li:nth-child(odd){
+						width: 200px;
+					}
+					.footer_brand_cat > li:nth-child(even){
+						width: 140px;
+					}
+					.footer_brand_cat p{
+						font-size: 15px;
+						font-weight: bold;
+						color: #fff;
+					}
+
+					.footer_sns{
+						border: 0px solid yellow;
+						width: 340px;
+						margin: 0 auto;
+					}
+					.footer_sns > p{
+						width: 123px;
+						position: absolute;
+						top: 345px;
+						font-size: 15px;
+						font-weight: bold;
+						color: #fff;
+					}
+					.footer_sns > ul{
+						width: 200px;
+						height: 35px;
+						position: absolute;
+						top: 340px;
+						left: 234px;
+					}
+					.footer_sns > ul > li{
+						float: left;
+						margin-right: 18px;
+					}
+					.footer_sns > ul > li:hover{
+						opacity: 0.8;
+					}
+
+					.footer_cmn{
+						border: 0px solid orange;
+						width: 675px;
+						height: 251px;
+						position: absolute;
+						left: 426px;
+						top: 40px;
+					}
+
+					.footer_cmn_one{
+						border: 0px solid yellow;
+						width: 160px; 
+						height: 251px;
+						position: absolute; 
+						left: 65px;
+					}
+					.footer_cmn_one > h1, .footer_cmn_two > h1{
+						font-size: 16px;
+						color: #fff;
+						margin-bottom: 15px;
+					}
+					.footer_cmn_one > li, .footer_cmn_two > li{
+						border: 0px solid green;
+						margin-bottom: 10px;
+					}
+					.footer_cmn_one > li:hover p, .footer_cmn_two > li:hover p{
+						text-decoration: underline;
+					}
+					.footer_cmn_one p, .footer_cmn_two p{
+						color: #fff;
+						font-size: 14px;
+					}
+
+					.footer_cmn_two{
+						width: 160px;
+						height: 251px;
+						position: absolute;
+						left: 294px;
+					}
+
+					.top_scroll{
+						border: 0px solid red; 
+						position: fixed;
+						bottom: 0;
+						right: 0;
+						display: none;
+					}
+			</style>
+
+
+			<div class="top">
+				<h1 class="mini_logo">
+					<img src="./images/logo_mini.png">
+				</h1>
+				<ul class="top_menu">
+					<li><a href="#"><p>JOIN</p></a></li>
+					<li><a href="#"><p>LOGIN</p></a></li>
+					<li><a href="#"><p>MY PAGE</p></a></li>
+					<li><a href="#"><p>FAVORITE</p></a></li>
+					<li><a href="#"><p>CART</p></a></li>
+					<li>
+						<img src="./images/btn_menu.png">
+						<ul class="mini_menu" >
+							<img src="./images/arrow_subnav.png">
+							<li><a href="#"><p>자주 묻는 질문</p></a></li>
+							<li><a href="#"><p>메일 수신 요청</p></a></li>
+							<li><a href="#"><p>문의하기</p></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="logo">
+				<h1><img src="./images/logo.png"></h1>
+			</div>
+
+
+			<style>
+				
 				
 				
 			</style>
@@ -1433,11 +1638,6 @@
 										</p>
 									</a>
 								</li>
-								<!--
-								<li style="width: 100%; height: 58px; margin: 0 auto; border: 0px solid red; ">
-									<h1 class="more" style="border: 0px solid blue; margin: 0 auto; text-align: center; width: 280px; height: 58px; background-color: #084e96; border-radius: 50px; color: #fff; font-size: 20px; top: 20px;">MORE</h1>
-								</li>
-								-->
 							</ul>
 
 							<h1 id="idk3_more">
@@ -1457,316 +1657,7 @@
 				</div>
 
 				<style>
-					.image_up{
-						border: 0px solid green;
-						margin-top: 150px;
-					}
-					.image_up > h1{
-						text-align: center;
-						color: #084e96;
-					}
-					.list{
-						border: 0px solid red;
-						margin-top: 55px;
-					}
-					.list > li{
-						border: 3px solid #084e96;
-						width: 109px; 
-						height: 100px;
-						margin-right: 8px;
-						float: left;
-					}
-					.list > li:last-child{
-						margin-right: 0;
-					}
-					.list > li > img{
-						width: 93px;
-						margin-top: -26px; 
-						margin-left: 9px;
-					}
-					.list > li > p{
-						font-size: 12px; 
-						font-weight: bold;
-						color: #084e96;
-						text-align: center;
-					}
-
-					.list > li:hover img{
-						transform: translate(0, -10px);
-					}
-
-					.character{
-						border: 0px solid green;
-						position: relative; 
-						height: 1350px;
-						margin-top: 300px;
-						background-color: #f0f0f0;
-					}
-
-					.character_main{
-						width: 1030px;
-						margin: 0 auto;
-					}
-
-					.character_main > h1{
-						color: #084e96;
-						text-align: center;
-						font-size: 26px;
-						padding-top: 60px;
-						padding-bottom: 60px;
-					}
-
-					.character_animation{
-						background-image: url("./images/character/bg_tab_suzyzoo.png");
-						position: relative;
-						width: 1030px;
-						height: 370px;
-						border: 0px solid red; 
-						overflow: hidden;
-					}
-
-					.suzy{
-						border: 0px solid red; 
-						position: absolute; 
-						top: 30px;
-						left: 366px;
-					}
-					.suzy02{
-						border: 0px solid blue;
-						position: absolute;
-						top: 166px;
-						right: 125px;
-					}
-					.suzy_heart01{
-						position: absolute; 
-						top: 180px;
-						right: 42px;
-					}
-
-					.suzy03{
-						border: 0px solid green;
-						position: absolute;
-						top: 19px;
-						left: 120px;
-					}
-
-					.suzy_heart02{
-						position: absolute;
-						top: 125px;
-						left: 40px;
-					}
-
-					.suzy04{
-						border: 0px solid green;
-						position: absolute;
-						top: 104px;
-						right: 280px;
-					}
-					.suzy05{
-						border: 0px solid green;
-						position: absolute;
-						top: 122px;
-						left: 245px;
-					}
-					.suzy_logo{
-						position: absolute; 
-						top: 22px;
-						right: 20px;
-					}
-					.character_introduce{
-						margin-top: 90px;
-					}
-
-					.introduce{
-						border: 0px solid blue;
-						width: 1100px;
-						margin: 0 auto; 
-					}
-					.introduce > li{
-						float: left; 
-						width: 350px;
-						height: 114px;
-						position: relative; 
-						margin-right: 24px;
-					}
-					.introduce > li:last-child{
-						margin-right: 0;
-					}
-
-					.introduce > li:hover img{
-						opacity: 0.8;
-					}
-					.introduce > li:hover .char_title{
-						text-decoration: underline;
-					}
-					.introduce > li > a > img{
-						border: 3px solid #dcdcdc;
-					}
-					.char_topics{
-						border: 0px solid green;
-						position: absolute; 
-						top: 5px;
-						left: 128px;
-						font-size: 15px;
-						font-weight: bold;
-						color: #084e96;
-					}
-					.char_title{
-						border: 0px solid yellow;
-						position: absolute; 
-						top: 32px;
-						left: 128px;
-						font-size: 14px;
-						color: #084e96;
-					}
-					.char_date{
-						border: 0px solid orange;
-						position: absolute; 
-						bottom: 5px;
-						left: 128px;
-						font-size: 13px;
-						color: #848484;
-					}
-
-
-					/*footer*/
-					.footer{
-						width: 100%;
-						height: 392px;
-						margin-top: 50px;
-						position: absolute; 
-						bottom: 0;
-					}
-					.footer_blue{
-						background-color: #044181;
-						width: 100%;
-						height: 322px;
-						position: absolute;
-						bottom: 0;
-					}
-
-
-
-					.footer_green{
-						position: relative;
-						border: 0px solid green;
-						width: 1100px;
-						height: 100%;
-						margin: 0 auto;
-					}
-					.footer_brand{
-						border: 0px solid red;
-						width: 420px;
-						height: 392px;
-						position: absolute; 
-						bottom: 0;
-						background-color: #084e96;
-					}
-
-					.footer_brand > h1{
-						margin-left: 40px;
-						margin-top: 40px;
-						margin-bottom: 35px;
-					}
-
-					.footer_brand_cat{
-						border: 0px solid red;
-						width: 340px;
-						height: 200px;
-						margin: 0 auto;
-						border-bottom: 1px solid #fff;
-					}
-					.footer_brand_cat > li{
-						float: left;
-						margin-bottom: 30px;
-					}
-					.footer_brand_cat > li:nth-child(odd){
-						width: 200px;
-					}
-					.footer_brand_cat > li:nth-child(even){
-						width: 140px;
-					}
-					.footer_brand_cat p{
-						font-size: 15px;
-						font-weight: bold;
-						color: #fff;
-					}
-
-					.footer_sns{
-						border: 0px solid yellow;
-						width: 340px;
-						margin: 0 auto;
-					}
-					.footer_sns > p{
-						width: 123px;
-						position: absolute;
-						top: 345px;
-						font-size: 15px;
-						font-weight: bold;
-						color: #fff;
-					}
-					.footer_sns > ul{
-						width: 200px;
-						height: 35px;
-						position: absolute;
-						top: 340px;
-						left: 234px;
-					}
-					.footer_sns > ul > li{
-						float: left;
-						margin-right: 18px;
-					}
-					.footer_sns > ul > li:hover{
-						opacity: 0.8;
-					}
-
-					.footer_cmn{
-						border: 0px solid orange;
-						width: 675px;
-						height: 251px;
-						position: absolute;
-						left: 426px;
-						top: 40px;
-					}
-
-					.footer_cmn_one{
-						border: 0px solid yellow;
-						width: 160px; 
-						height: 251px;
-						position: absolute; 
-						left: 65px;
-					}
-					.footer_cmn_one > h1, .footer_cmn_two > h1{
-						font-size: 16px;
-						color: #fff;
-						margin-bottom: 15px;
-					}
-					.footer_cmn_one > li, .footer_cmn_two > li{
-						border: 0px solid green;
-						margin-bottom: 10px;
-					}
-					.footer_cmn_one > li:hover p, .footer_cmn_two > li:hover p{
-						text-decoration: underline;
-					}
-					.footer_cmn_one p, .footer_cmn_two p{
-						color: #fff;
-						font-size: 14px;
-					}
-
-					.footer_cmn_two{
-						width: 160px;
-						height: 251px;
-						position: absolute;
-						left: 294px;
-					}
-
-					.top_scroll{
-						border: 0px solid red; 
-						position: fixed;
-						bottom: 0;
-						right: 0;
-						display: none;
-					}
+					
 					
 				</style>
 				<div class="image_up" >
