@@ -1,0 +1,792 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	word-break: break-all;
+	letter-spacing: -2px;
+}
+#wrap{
+	position: relative;
+	min-width: 1140px;
+	overflow: hidden;
+}
+/*layer_popup*/
+#layer_popup{
+	display: none;
+	position: absolute;
+	z-index: 120;
+	top: 2420px;
+	padding-top: 230px;
+	left: 50%;
+	margin-left: -453.5px;
+}
+#player{
+	display: block;
+}
+.layer_popup{
+	position: relative;
+}
+.layer_popup_close{
+	position: absolute;
+	display: block;
+	top: 5px;
+	right: -30px;
+}
+.popup_mask{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.4;
+	z-index: 20;
+}
+#header{
+	position: relative;
+	border-top: 4px solid #ff6a00;
+	border-bottom: 1px solid #e6e6e6;
+}
+/*quick_menu*/
+.quick_menu{
+	position: absolute;
+	width: 142px;
+	height: 261px;
+	top: 570px;
+	left: 50%;
+	margin-left: 570px;
+	background-image: url("./images/samyang/quick_bg.png");
+	background-repeat: no-repeat;
+	z-index: 200;
+}
+.quick_menu_inner > ul{
+	width: 94px;
+	margin: 110px auto 0;
+}
+.quick_menu_inner > ul > li{
+	height: 29px;
+	text-align: center;
+}
+.quick_menu_inner > ul > li:hover{
+	background-image: url("./images/samyang/quick_hover.png");
+}
+.quick_menu_inner > ul > li:hover a{
+	color: #fff;
+}
+.quick_menu_inner > ul > li > a{
+	display: block;
+	height: 29px;
+	color: #333;
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.quick_top{
+	margin-top: 12px;
+}
+.quick_top a{
+	display: block;
+	width: 84px;
+	height: 21px;
+	margin: 0 auto;
+	background-image: url("./images/samyang/quick_arrow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*header_top*/
+.header_top_main{
+	width: 1140px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+}
+.header_top_main > p{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #999;
+}
+.header_top_main > p > strong{
+	color: #333;
+}
+.header_top_menu{
+	float: right;
+}
+.header_top{
+	background: #f4f4f6;
+}
+.header_top_sns{
+	float: left;
+}
+.header_top_sns > li{
+	float: left;
+	margin-left: 18px;
+}
+.header_top_link{
+	float: left;
+	margin-left: 35px;
+}
+.header_top_link > li{
+	float: left;
+	margin-left: 5px;
+}
+.header_top_link > li > a{
+	display: block;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	height: 21px;
+	line-height: 21px;
+	margin-top: 10px;
+	padding: 0 10px;
+	background: #fff;
+	color: #333;
+	font-size: 13px;
+}
+#header_link1{
+	padding: 0;
+	border: 0 none;
+	background: none;
+}
+/*header_bottom*/
+.header_bottom{
+	position: relative;
+	width: 1140px;
+	height: 95px;
+	margin: 0 auto;
+}
+.header_bottom > h1{
+	padding-top: 18px;
+}
+.header_bottom_menu{
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+.header_bottom_sub_menu{
+	float: left;
+	margin-left: 105px;
+}
+.header_bottom_sub_menu > a{
+	display: block;
+	height: 65px;
+	line-height: 65px;
+	color: #111;
+	font-size: 18px;
+	font-weight: bold;
+}
+.header_bottom_sub_menu:hover .header_bottom_mini_menu{
+	display: block;
+}
+.header_bottom_mini_menu{
+	position: relative;
+	top: 8px;
+	left: -15px;
+	width: 10px;
+	display: none;
+	z-index: 99;
+}
+.header_bottom_mini_menu > ul{
+	border-top: 4px solid #ff6a00;
+	width: 190px;
+	background: #fff;
+}
+.header_bottom_mini_menu > ul > li{
+	width: 150px;
+	margin: 0 auto; 
+	padding: 10px 0;
+}
+.header_bottom_mini_menu > ul > li > a{
+	color: #867d77;
+	font-size: 15px;
+}
+.header_bottom_mini_menu > ul > li > a:hover{
+	color: #000;
+}
+/*banner*/
+.banner{
+	position: relative;
+	height: 573px;
+}
+.banner_slide > li{
+	width: 100%;
+	min-width: 1140px;
+	height: 573px;
+}
+.banner_slide > li > a{
+	display: block;
+	width: 100%;
+	min-width: 1140px;
+	height: 100%;
+	margin: 0 auto; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner_slide > li:first-child > a{
+	background-image: url("./images/samyang/20160902152120299111.jpg");
+	background-color: #ffcbae;
+}
+.banner_slide > li:nth-child(2) > a{
+	background-image: url("./images/samyang/20160903212600999093.jpg");
+	background-color: #fcab7b;
+}
+.banner_slide > li:nth-child(3) > a{
+	background-image: url("./images/samyang/20190215173954811230.jpg");
+	background-color: #be96b1;
+}
+.banner_slide > li:nth-child(4) > a{
+	background-image: url("./images/samyang/20160903212843612097.jpg");
+	background-color: #a8b8ed;
+}
+.banner_slide > li:nth-child(5) > a{
+	background-image: url("./images/samyang/20190503144600076049.jpg");
+	background-color: #c1f06f;
+}
+.banner_slide > li:last-child > a{
+	background-image: url("./images/samyang/20160929195235468003.jpg");
+	background-color: #fed572;
+}
+/*product*/
+.product{
+	position: relative;
+	margin: 0 auto;
+	height: 945px;
+	background: url("./images/samyang/bg_product_tab01.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.product_main{
+	padding-top: 70px;
+}
+.product_main > h3{
+	color: #222;
+	font-size: 46px;
+	font-weight: normal;
+	text-align: center;
+}
+.product_main > h3 > span{
+	display: block;
+	color: #666;
+	font-size: 22px;
+}
+.product_main > p{
+	margin-top: 50px;
+	color: #222;
+	font-size: 32px;
+	text-align: center;
+}
+/*product_menu*/
+.product_menu{
+	margin-top: 60px;
+	height: 115px;
+}
+.product_gnb{
+	width: 380px;
+	margin: 0 auto;
+}
+.product_gnb > li{
+	float: left;
+	color: #666;
+	font-size: 15px;
+	text-align: center;
+	margin-left: 14px;
+}
+.product_gnb > li > label > p{
+	font-weight: bold;
+}
+.product_gnb > li > label > p > a{
+	display: block;
+	height: 80px;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.product_gnb01 > p > a > img{
+	margin-top: -80px;
+}
+/*product_list*/
+.tab-input{
+	display: none;
+}
+.tab-item {
+	position: absolute; 
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transform: 
+	translateY(10px); 
+	transform: translateY(10px);
+}
+.tab-input:checked + .tab-item {
+	position: static; 
+	visibility: visible; 
+	opacity: 1;
+	-webkit-transform: translateY(0); 
+	transform: translateY(0); 
+	transition: 0.3s ease-in-out;
+}
+.product_list{
+	margin-top: 110px;
+}
+.product_list_set{
+	width: 1596px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tab-item{
+	width: 100%;
+	overflow: hidden;
+	height: 300px;
+}
+.idk{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.idk > li{
+	position: relative;
+	float: left;
+	width: 228px;
+	text-align: center;
+	line-height: 25px;
+}
+.idk > li > a{
+	color: #666;
+	font-size: 15px;
+}
+.idk > li > a > img{
+	margin: 0 auto 20px; 
+	width: 150px;
+	height: 150px;
+}
+.idk > li > a > strong{
+	display: block;
+	color: #333;
+	font-weight: bold;
+	font-size: 17px;
+}
+/*product_single*/
+.product_single{
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -600px;
+	width: 250px;
+	height: 330px;
+	background-image: url("./images/samyang/product_new_bg.png");
+	background-repeat: no-repeat;
+	background-position: 8px 0;
+}
+.product_single_inner > li{
+	padding-top: 90px;
+	padding-left: 50px;
+}
+/*farm*/
+.farm{
+	height: 756px;
+	background-image: url("./images/samyang/family_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.farm_inner{
+	width: 1140px;
+	margin: 0 auto;
+	padding: 70px 0 90px;
+}
+.farm_inner > h3{
+	color: #fff;
+	font-size: 46px;
+	line-height: 46px;
+	font-weight: bold;
+	text-align: center;
+}
+.farm_inner > h3 > span{
+	color: #fff;
+	display: block;
+	margin-top: 20px;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: normal;
+}
+.farm_set{
+	overflow: hidden;
+	margin-top: 95px;
+}
+.farm_set > div{
+	float: left;
+}
+.farm_title{
+	font-size: 24px;
+	line-height: 24px;
+	color: #010101;
+}
+.farm_set p{
+	font-size: 16px;
+	line-height: 20px;
+	color: #333;
+	margin-top: 18px;
+}
+.farm_set a > img{
+	margin-top: 24px;
+}
+.farm_set01{
+	width: 430px;
+}
+.farm_set011{
+	height: 335px;
+	padding: 40px;
+	background-image: url("./images/samyang/family_block01.jpg");
+	background-repeat: no-repeat;
+}
+.farm_set02{
+	width: 240px;
+	margin-left: 20px;
+}
+.farm_set021{
+	height: 345px;
+	padding: 35px;
+	background-image: url("./images/samyang/family_block02.jpg");	
+	background-repeat: no-repeat;			
+}
+.farm_set03{
+	width: 430px;
+	margin-left: 20px;
+}
+.farm_set031{
+	height: 127px;
+	padding: 35px;
+	background-image: url("./images/samyang/family_block03.jpg");
+	background-repeat: no-repeat;	
+}
+.farm_set032{
+	height: 127px;
+	padding: 35px;
+	margin-top: 21px;
+	background-image: url("./images/samyang/family_block04.jpg");
+	background-repeat: no-repeat;	
+}
+/*community*/
+.community{
+	position: relative;
+	width: 100%;
+	min-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 1070px;
+	background: #feebd1;
+}
+.community_inner{
+	width: 1140px;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.community_inner > h3{
+	color: #222;
+	font-size: 46px;
+	line-height: 46px;
+	font-weight: bold;
+	text-align: center;
+}
+.community_inner > h3 > span{
+	display: block;
+	margin-top: 15px;
+	color: #222;
+	font-size: 22px;
+	font-height: 22px;
+	font-weight: normal;
+}
+.community_sns_set{
+	width: 376px;
+	overflow: hidden;
+	margin: 45px auto;
+}
+.community_sns_set > li{
+	float: left;
+	margin: 0 9px;
+}
+.community_box01{
+	float: left;
+	width: 313px;
+}
+.community_sns{
+	position: relative;
+}
+.community_sns_inner{
+	height: 175px;
+	background: #fff;
+	padding: 20px 30px;
+}
+.community_sns_inner img{
+	width: 27px;
+}
+.community_sns_inner p{
+	margin-top: 20px;
+}
+.community_sns_inner a{
+	color: #333;
+	font-size: 16px;
+}
+.community_sns_inner span{
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	color: #a0a0a0;
+	bottom: 40px;
+}
+.community_sns_open{
+	display: none;
+	position: absolute;
+	top: 215px;
+	left: 0;
+	width: 313px;
+	background: #fff;
+	z-index: 8;
+}
+.community_sns_open > li{
+	position: relative;
+	width: 253px;
+	height: 140px;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-top: 1px solid #dedede;
+}
+.community_sns_open > li > div > img{
+	width: 27px;
+}
+.community_sns_open > li > p{
+	margin-top: 25px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.community_sns_open > li > p > a{
+	color: #333;
+}
+.community_sns_open > li > span{
+	position: absolute;
+	display: block;
+	color: #a0a0a0;
+	left: 0;
+	bottom: 20px;
+	font-size: 12px;
+}
+.community_sns_click{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 26px;
+	height: 26px;
+}
+.community_event{
+	position: relative;
+	height: 427px;
+	margin-top: 20px;
+}
+.community_box02{
+	float: left;
+	margin-left: 20px;
+	width: 474px;
+}
+.community_story{
+	height: 142px;
+	margin-top: 20px;
+	padding: 35px;
+	background: #91c749;
+	background-image: url("./images/samyang/bg_comm_tab04.png");
+	background-repeat: no-repeat;
+	background-position: 310px 40px;
+}
+.community_story > p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.community_story > a{
+	display: block;
+	margin-top: 30px;
+}
+.community_box03{
+	float: left;
+	margin-left: 20px;
+	width: 313px;
+}
+.community_recipe{
+	position: relative;
+	height: 145px;
+	padding: 35px;
+	background: #6fc8e9;
+	background-image: url("./images/samyang/bg_comm_tab_new.png");
+	background-repeat: no-repeat;
+	background-position: 217px 130px;
+}
+.community_recipe > p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.community_recipe > a{
+	display: block;
+	margin-top: 30px;
+}
+.community_notice{
+	position: relative;
+	height: 125px;
+	margin-top: 20px;
+	padding: 35px;
+	background: #fff;
+}
+.community_notice > p{
+	color: #666;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.community_notice > span{
+	position: absolute;
+	display: block;
+	color: #a0a0a0;
+	font-size: 12px;
+	font-weight: bold;
+	bottom: 40px;
+}
+.community_notice > a{
+	position: absolute;
+	top: 34px;
+	right: 25px;
+}
+.community_shop{
+	height: 142px;
+	margin-top: 20px;
+	padding: 35px;
+	background: #c38ef2;
+	background-image: url("./images/samyang/bg_comm_tab07.png");
+	background-repeat: no-repeat;
+	background-position: 220px 135px;
+}
+.community_shop > p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.community_shop > a{
+	display: block;
+	margin-top: 50px;
+}
+.community_title{
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+}
+/*footer*/
+#footer{
+	height: 184px;
+	background: #fafafa;
+	border-top: 1px solid #e4e4e4;
+}
+.footer{
+	position: relative;
+	width: 1140px;
+	margin: 0 auto;
+}
+.footer_logo{
+	float: left;
+	margin-top: 50px;
+}
+.footer_left{
+	float: left;
+	margin-top: 35px;
+	margin-left: 50px;
+}
+.footer_left > ul{
+	overflow: hidden;
+}
+.footer_left > ul > li{
+	float: left;
+	padding-left: 11px;
+	padding-right: 11px;
+	background-image: url("./images/samyang/ico_foot_bar.gif");
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+.footer_left > ul > li:first-child{
+	background-image: none;
+	padding-left: 0;
+}
+.address{
+	margin-top: 20px;
+	color: #999;
+	font-size: 12px;
+}
+.footer_left > ul > li > a{
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+}
+.footer_left > p{
+	margin-top: 3px;
+	color: #bbb;
+	font-size: 12px;
+}
+.footer_right{
+	float: right;
+	padding-top: 38px;
+}
+.footer_sns{
+	float: left;
+	margin-right: 20px;
+}
+.footer_sns > li{
+	position: relative;
+	float: left;
+	margin: 0 15px;
+	height: 30px;
+	line-height: 30px;
+}
+.footer_link{
+	position: relative;
+	float: left;
+}
+.footer_link_button{
+	display: block;
+	width: 220px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 20px;
+	border: 1px solid #c8c8c8;
+	background: #fff;
+	background-image: url("./images/samyang/ico_sel_arr.gif");
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+}
+.footer_link_source{
+	position: absolute;
+	display: none;
+	background: #fff;
+	bottom: 119px;
+	border: 1px solid #c8c8c8;
+}
+.footer_link_source > li{
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.footer_link_source > li > a{
+	display: block;
+	width: 220px;
+	padding: 0 5px;
+	color: #666;
+	font-size: 14px;
+}
+.footer_link_source > li > a:hover{
+	font-weight: bold;
+}
+.footer_link > p{
+	margin-top: 5px;
+}
